@@ -11,5 +11,14 @@ it('renders without crashing', () => {
 
 it('PlayerCard is rendering', () => {
   const playerCard = rtl.render(<Player />);
-  expect(playerCard.getByText(/name/i));
+  expect(playerCard.getByText(/player name/i));
 }); 
+
+it('renders without crashing', () => {
+  render(<App />);
+});
+
+it('PlayerCard is rendering', () => {
+  const playerCard = rtl.render(<Player />);
+  expect(playerCard.getByText(/country/i));
+})
