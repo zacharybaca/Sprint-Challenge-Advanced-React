@@ -9,17 +9,24 @@ const Div = styled.div`
 
 `
 
+const CardDiv = styled.div`
+    border: 2px solid black;
+    width: 500px;
+    background-color: green;
+`
+
 
 const Player = (props) => (
     
     <Div>
-    <li>
-        <h2>Player Name</h2>
-        {props.players.name}
-        <br />
-        <h2>Country</h2>
-        {props.players.country}
-    </li>
+        <CardDiv>
+            <h2>Player Name</h2>
+            <h4>{props.players.name}</h4>
+            <br />
+            <h2>Country</h2>
+            <h4>{props.players.country}</h4>
+        </CardDiv>
+    
     </Div>
     
 )

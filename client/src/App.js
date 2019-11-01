@@ -2,7 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import Player from './components/player';
 import Email from './components/Email';
-import './App.css';
+import NavBar from './components/NavBar';
+
 
 
 
@@ -24,6 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+          <NavBar />
           <Email />
           {this.state.players.map(players => <Player players={players} />)}
       </div>
